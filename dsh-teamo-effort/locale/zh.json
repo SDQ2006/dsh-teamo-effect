@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Teamo 模型强度",
+    "description": "把选定的 reasoning_effort 注入发往 TeamoRouter 的模型请求。"
+  }
+}

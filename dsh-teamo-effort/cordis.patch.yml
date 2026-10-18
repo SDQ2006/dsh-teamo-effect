@@ -1,0 +1,19 @@
+# dsh-teamo-effort bundle patch.
+#
+# A profile install (`dsh plugin --profile <name> add .`) appends this package to
+# dsh.profile.bundles and applies this insert. The row id is the id the Client
+# half resolves its settings namespace with; keep the two in step.
+- insert:
+    - id: teamo-effort
+      name: dsh-teamo-effort
+      config:
+        # off | low | medium | high
+        effort: 'off'
+        # Provider routes this preference applies to; empty means every route.
+        providers:
+          - teamo
+        # Exact model ids; empty means every model on those routes.
+        models: []
+        # Endpoint prefixes whose outbound JSON bodies receive reasoning_effort.
+        endpoints:
+          - 'https://api.teamorouter.cn'

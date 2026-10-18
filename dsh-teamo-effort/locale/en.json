@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Teamo Model Strength",
+    "description": "Injects the selected reasoning_effort into model requests sent to TeamoRouter."
+  }
+}
